@@ -4,7 +4,7 @@ import { IoMdDownload } from "react-icons/io";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="aman">
       <h5>Welcome </h5>
       <div>
         <h1 className='download'>
@@ -17,7 +17,7 @@ const Home = () => {
         </h1>
       </div>
       <div>
-        <img src="./Images/my.jpg" alt="my image" />
+        <img src="./Images/my.jpg" alt="homepage" />
       </div>
     </div>
   )

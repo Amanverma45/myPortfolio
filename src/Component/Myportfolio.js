@@ -26,7 +26,7 @@ const Myportfolio = () => {
           </h1>
         </div>
         <div>
-          <img src="./Images/my.jpg" alt="my image" />
+          <img src="./Images/my.jpg" alt="aman" />
         </div>
       </div>
 
@@ -34,7 +34,7 @@ const Myportfolio = () => {
 
       <div className='about'>
         <div className='dp1'>
-          <img src='./Images/my.jpg' alt="my image" />
+          <img src='./Images/my.jpg' alt="verma" />
         </div>
         <div className='para'>
           <h2>About Me</h2>
