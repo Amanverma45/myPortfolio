@@ -105,12 +105,12 @@
 
     .home h5 {
       background: url("./fl.jpg");
-      background-size: contain;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-top: 6em;
-      font-size: 2.5rem;
-      max-width: 90%;
+        background-size: contain;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 0.5em;
+        font-size: 1.5rem;
+        max-width: 90%;
     }
 
     .home img {
