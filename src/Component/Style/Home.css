@@ -1,18 +1,18 @@
-.home {
+.aman {
   display: flex;
   flex-direction: row;
-  margin-top: 8em;
-  width: 100%;
-  min-height: 60vh;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  width: 100%;
+  min-height: 70vh;
   flex-wrap: wrap;
-  text-align: center;
-  border-bottom: 1px solid #120e0e4f;
+  border-bottom: 2px solid #120e0e4f;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.home h1 {
+.aman h1 {
   font-size: 2rem;
   max-width: 400px;
   margin: 0;
@@ -21,7 +21,7 @@
   color: white;
 }
 
-.home h5 {
+.aman h5 {
   background: url("./fl.jpg");
   background-size: contain;
   -webkit-background-clip: text;
@@ -30,7 +30,6 @@
   top: 80px;
   left: 20px;
   font-size: 2.5rem;
-  color: rgb(0, 0, 0);
   margin: 0;
 }
 
@@ -43,90 +42,16 @@
 }
 
 .line:hover {
-  color: #333;
+  color: #007bff;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-}
-
-.line1 {
-  animation-delay: 0.3s;
-}
-
-.line2 {
-  animation-delay: 1s;
-}
-
-.line3 {
-  animation-delay: 1.7s;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-.home img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  opacity: 0;
-  transform: scale(0.8);
-  animation: zoomIn 1s ease forwards;
-  animation-delay: 2.2s;
-}
-
-@keyframes zoomIn {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@media (max-width: 768px) {
-  .home {
-    flex-direction: column;
-    /* margin-top: 16em; */
-  }
-
-  .home h1 {
-    margin-top: 30px;
-    font-size: 1.5rem;
-    max-width: 90%;
-  }
-  .home h5 {
-      background: url("./fl.jpg");
-  background-size: contain;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-   margin-top: 6em;
-      font-size: 2.5rem;
-    max-width: 90%;
-}
-
-  .home img {
-    width: 180px;
-    height: 180px;
-  }
-}
-
-.line {
-  display: block;
-  opacity: 0;
-  transform: translateY(15px);
-  animation: fadeInUp 0.5s ease forwards;
 }
 
 .line1 {
   animation-delay: 0.1s;
 }
-
 .line2 {
   animation-delay: 0.4s;
 }
-
 .line3 {
   animation-delay: 0.7s;
 }
@@ -139,10 +64,10 @@
 }
 
 .download button {
-  display: inline-flex;       
-  align-items: center;      
-  justify-content: center; 
-  gap: 8px; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   padding: 12px 28px;
   background: linear-gradient(135deg, #8ea7c200, #000000);
   color: #fff;
@@ -153,19 +78,8 @@
   margin-top: 2em;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
-  cursor: pointer; /* good UX */
+  cursor: pointer;
 }
-
-@media (max-width: 768px) {
-  .download button {
-    padding: 10px 20px;
-    font-size: 12px;
-    border-radius: 20px;
-    width: 80%; 
-    max-width: 250px;
-  }
-}
-
 
 .download button:hover {
   background: linear-gradient(135deg, #273442, #1d2123);
@@ -173,7 +87,17 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
 
-.home img {
+@media (max-width: 768px) {
+  .download button {
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 250px;
+  }
+}
+
+.homies img {
   width: 250px;
   height: 250px;
   object-fit: cover;
@@ -182,11 +106,41 @@
   transform: scale(0.9);
   animation: zoomIn 0.6s ease forwards;
   animation-delay: 1s;
+  transition: transform 0.4s ease;
+}
+
+.homies img:hover {
+  transform: scale(1.1);
 }
 
 @keyframes zoomIn {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .aman {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aman h1 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .aman h5 {
+    margin-top: 6em;
+    font-size: 2rem;
+    left: 10px;
+  }
+
+  .homies img {
+    width: 180px;
+    height: 180px;
   }
 }
